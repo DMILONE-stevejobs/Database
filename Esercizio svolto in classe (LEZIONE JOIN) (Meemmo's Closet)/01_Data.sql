@@ -1,0 +1,66 @@
+INSERT INTO acquisti (nome_prodotto, sku, categoria, prezzo, sito, taglia, quantita) VALUES
+('Air Jordan 1 Retro', 'AJ1-RETRO-42', 'sneakers', 220.00, 'nike.com', '42', 10),
+('Nike Dunk Low', 'NIKE-DUNK-43', 'sneakers', 180.00, 'nike.com', '43', 8),
+('Adidas Yeezy Boost 350', 'YEEZY-350-42.5', 'sneakers', 250.00, 'adidas.com', '42.5', 5),
+('New Balance 550', 'NB-550-44', 'sneakers', 140.00, 'newbalance.com', '44', 12),
+('Supreme Hoodie Box Logo', 'SUP-HOODIE-L', 'vestiti', 150.00, 'supreme.com', 'L', 6),
+('Palace Tri-Ferg Tee', 'PAL-TRI-M', 'vestiti', 60.00, 'palaceskateboards.com', 'M', 15),
+('Nike Sportswear Jacket', 'NIKE-JACKET-XL', 'vestiti', 120.00, 'nike.com', 'XL', 7),
+('Adidas Track Pants', 'ADI-TRACK-S', 'vestiti', 70.00, 'adidas.com', 'S', 20),
+('Air Jordan 4 Retro', 'AJ4-RETRO-41', 'sneakers', 210.00, 'nike.com', '41', 9),
+('Nike Air Max 97', 'NIKE-AM97-42', 'sneakers', 190.00, 'nike.com', '42', 11),
+('Adidas NMD_R1', 'ADI-NMD-43', 'sneakers', 130.00, 'adidas.com', '43', 10),
+('Supreme Cap Logo', 'SUP-CAP-M', 'vestiti', 45.00, 'supreme.com', 'M', 14),
+('Palace Hoodie', 'PAL-HOODIE-L', 'vestiti', 130.00, 'palaceskateboards.com', 'L', 5),
+('Nike T-Shirt Essentials', 'NIKE-TSHIRT-M', 'vestiti', 35.00, 'nike.com', 'M', 18),
+('Adidas Hoodie Essentials', 'ADI-HOODIE-XL', 'vestiti', 85.00, 'adidas.com', 'XL', 8);
+
+INSERT INTO prodotti (nome_prodotto, sku, categoria, prezzo, taglia, quantita_disponibile) VALUES
+('Air Jordan 1 Retro', 'AJ1-RETRO-42', 'sneakers', 220.00, '42', 0),
+('Nike Dunk Low', 'NIKE-DUNK-43', 'sneakers', 180.00, '43', 8),
+('Adidas Yeezy Boost 350', 'YEEZY-350-42.5', 'sneakers', 250.00, '42.5', 5),
+('New Balance 550', 'NB-550-44', 'sneakers', 140.00, '44', 12),
+('Supreme Hoodie Box Logo', 'SUP-HOODIE-L', 'vestiti', 150.00, 'L', 0),
+('Palace Tri-Ferg Tee', 'PAL-TRI-M', 'vestiti', 60.00, 'M', 15),
+('Nike Sportswear Jacket', 'NIKE-JACKET-XL', 'vestiti', 120.00, 'XL', 7),
+('Adidas Track Pants', 'ADI-TRACK-S', 'vestiti', 70.00, 'S', 20),
+('Air Jordan 4 Retro', 'AJ4-RETRO-41', 'sneakers', 210.00, '41', 9),
+('Nike Air Max 97', 'NIKE-AM97-42', 'sneakers', 190.00, '42', 11),
+('Adidas NMD_R1', 'ADI-NMD-43', 'sneakers', 130.00, '43', 10),
+('Supreme Cap Logo', 'SUP-CAP-M', 'vestiti', 45.00, 'M', 14),
+('Palace Hoodie', 'PAL-HOODIE-L', 'vestiti', 130.00, 'L', 5),
+('Nike T-Shirt Essentials', 'NIKE-TSHIRT-M', 'vestiti', 35.00, 'M', 18),
+('Adidas Hoodie Essentials', 'ADI-HOODIE-XL', 'vestiti', 85.00, 'XL', 8);
+
+INSERT INTO vendite (id_prodotto, nome_prodotto, sku, categoria, quantità, taglia, piattaforma_vendita, prezzo_vendita, nazione) VALUES
+(1, 'Air Jordan 1 Retro', 'AJ1-RETRO-42', 'sneakers', 1, '42', 'StockX', 250.00, 'IT'),
+(2, 'Adidas Yeezy Boost 350', 'YEEZY-350-42.5', 'sneakers', 1, '42.5', 'GOAT', 280.00, 'FR'),
+(3, 'New Balance 550', 'NB-550-44', 'sneakers', 3, '44', 'Nike Store', 160.00, 'UK'),
+(4, 'Supreme Hoodie Box Logo', 'SUP-HOODIE-L', 'vestiti', 1, 'L', 'Supreme Online', 180.00, 'IT'),
+(5, 'Palace Tri-Ferg Tee', 'PAL-TRI-M', 'vestiti', 2, 'M', 'Palace Store', 70.00, 'US'),
+(6, 'Nike Sportswear Jacket', 'NIKE-JACKET-XL', 'vestiti', 1, 'XL', 'Nike Store', 140.00, 'DE'),
+(7, 'Adidas Track Pants', 'ADI-TRACK-S', 'vestiti', 3, 'S', 'Adidas Online', 85.00, 'FR'),
+(8, 'Air Jordan 4 Retro', 'AJ4-RETRO-41', 'sneakers', 2, '41', 'StockX', 230.00, 'IT'),
+(9, 'Nike Air Max 97', 'NIKE-AM97-42', 'sneakers', 1, '42', 'eBay', 210.00, 'US'),
+(10, 'Supreme Cap Logo', 'SUP-CAP-M', 'vestiti', 1, 'M', 'Supreme Online', 55.00, 'IT'),
+(11, 'Palace Hoodie', 'PAL-HOODIE-L', 'vestiti', 1, 'L', 'Palace Store', 150.00, 'US'),
+(12, 'Nike T-Shirt Essentials', 'NIKE-TSHIRT-M', 'vestiti', 2, 'M', 'Nike Store', 40.00, 'DE'),
+(13, 'Adidas Hoodie Essentials', 'ADI-HOODIE-XL', 'vestiti', 1, 'XL', 'Adidas Online', 100.00, 'FR');
+
+
+INSERT INTO clienti (nome_cliente, piattaforma_acquisto, id_vendita, nazione_cliente) VALUES
+('Luca Rossi', 'StockX', 1, 'IT'),
+('Anna Bianchi', 'eBay', 2, 'DE'),
+('Pierre Dubois', 'GOAT', 3, 'FR'),
+('James Smith', 'Nike Store', 4, 'UK'),
+('Marco Verdi', 'Supreme Online', 5, 'IT'),
+('Emily Johnson', 'Palace Store', 6, 'US'),
+('Thomas Müller', 'Nike Store', 7, 'DE'),
+('Claire Martin', 'Adidas Online', 8, 'FR'),
+('Francesco Neri', 'StockX', 9, 'IT'),
+('Michael Brown', 'eBay', 10, 'US'),
+('Oliver White', 'Adidas Online', 11, 'UK'),
+('Giulia Conti', 'Supreme Online', 12, 'IT'),
+('Sophia Lee', 'Palace Store', 13, 'US'),
+('Lorenzo Ferrari', 'Nike Store', 14, 'DE'),
+('Isabella Rossi', 'Adidas Online', 15, 'FR');
